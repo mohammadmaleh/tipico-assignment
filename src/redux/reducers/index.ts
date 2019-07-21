@@ -3,7 +3,7 @@ import { SEARCH_GITHUB } from "../actions/actionsTypes";
 
 const initState: gitHubRepositoriesState = {
   incomplete_results: false,
-  items: [],
+  items: undefined,
   total_count: 0
 };
 export function gitHubRepositoriesReducer(

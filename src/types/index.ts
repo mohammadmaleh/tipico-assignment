@@ -1,6 +1,14 @@
 export interface gitHubRepositoriesState {
   incomplete_results: boolean;
-  items: {}[];
+  items:
+    | {
+        id: number;
+        name: string;
+        owner: { login: string; avatar: string };
+        watchers_count: number;
+        language: string;
+      }[]
+    | undefined;
   total_count: number;
 }
 export interface gitHubRepositoriesAction {

@@ -7,9 +7,12 @@ function searchGithub(data: Object) {
   };
 }
 
-export const searchGithubAsync = () => async (dispatch: Function) => {
+export const searchGithubAsync = (
+  searchValue: string,
+  activePage: number
+) => async (dispatch: Function) => {
   try {
-    const res = await searchGithubAPI;
+    const res = await searchGithubAPI(searchValue, activePage);
     const { data } = res;
     dispatch(searchGithub(data));
   } catch (err) {
