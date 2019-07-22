@@ -1,11 +1,11 @@
 import { searchGithubAPI } from "../API";
 import { SEARCH_GITHUB } from "./actionsTypes";
-function searchGithub(data: Object) {
+export const searchGithub = (data: Object) => {
   return {
     type: SEARCH_GITHUB,
     payload: data
   };
-}
+};
 
 export const searchGithubAsync = (
   searchValue: string,

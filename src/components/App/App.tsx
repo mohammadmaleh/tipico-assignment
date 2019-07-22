@@ -6,7 +6,7 @@ import SearchRepositories from "../../containers/SearchRepositories/SearchReposi
 const store = configureStore();
 const App: React.FC = () => {
   return (
-    <Provider store={store}>
+    <Provider store={store} data-test="component-app">
       <SearchRepositories />
     </Provider>
   );

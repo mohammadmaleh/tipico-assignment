@@ -4,7 +4,7 @@ export interface gitHubRepositoriesState {
     | {
         id: number;
         name: string;
-        owner: { login: string; avatar: string };
+        owner: { login: string };
         watchers_count: number;
         language: string;
       }[]
@@ -13,7 +13,7 @@ export interface gitHubRepositoriesState {
 }
 export interface gitHubRepositoriesAction {
   type: string;
-  payload: Object;
+  payload?: Object;
 }
 
 export interface RootState {

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search form it renders without error 1`] = `ShallowWrapper {}`;
+
+exports[`search form render welcome message on init 1`] = `ShallowWrapper {}`;
+
+exports[`search form renders no results found message when receiving an empty array 1`] = `ShallowWrapper {}`;
+
+exports[`search form renders table when there are results  1`] = `ShallowWrapper {}`;
+
+exports[`search form renders table when there are results and renders rows   1`] = `ShallowWrapper {}`;
+
+exports[`search form renders table when there are results and renders rows   2`] = `ShallowWrapper {}`;

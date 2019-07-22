@@ -1,7 +1,7 @@
 import { gitHubRepositoriesState, gitHubRepositoriesAction } from "../../types";
 import { SEARCH_GITHUB } from "../actions/actionsTypes";
 
-const initState: gitHubRepositoriesState = {
+export const initState: gitHubRepositoriesState = {
   incomplete_results: false,
   items: undefined,
   total_count: 0

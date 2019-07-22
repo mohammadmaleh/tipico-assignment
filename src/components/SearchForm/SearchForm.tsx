@@ -8,13 +8,36 @@ interface ISearchFormProps {
     | ((event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void)
     | undefined;
 }
-
+const styles = {
+  container: {
+    height: 70,
+    display: "flex",
+    justifyContent: "center",
+    alignContent: "center"
+  },
+  searchInput: {
+    margin: 10
+  },
+  submitButton: {
+    margin: 10
+  }
+};
 const SearchForm: React.FunctionComponent<ISearchFormProps> = props => {
   const { onChangeSearchInput, onSearchButtonClicked } = props;
   return (
-    <div>
-      <Input onChange={onChangeSearchInput} />
-      <Button onClick={onSearchButtonClicked}>Search</Button>
+    <div data-test="component-search-form" style={styles.container}>
+      <Input
+        onChange={onChangeSearchInput}
+        style={styles.searchInput}
+        data-test="search-input"
+      />
+      <Button
+        onClick={onSearchButtonClicked}
+        style={styles.submitButton}
+        data-test="submit-button"
+      >
+        Search
+      </Button>
     </div>
   );
 };
