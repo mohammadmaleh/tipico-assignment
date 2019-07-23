@@ -36,9 +36,13 @@ const SearchResults: React.FunctionComponent<ISearchResultsProps> = props => {
     if (gitHubRepositories && gitHubRepositories.items)
       return gitHubRepositories.items.map(item => (
         <Row key={item.id} data-test="results-table-row">
-          <Cell>{item.name}</Cell>
+          <Cell>
+            <a href={item.html_url}>{item.full_name}</a>
+          </Cell>
           <Cell>{item.language}</Cell>
-          <Cell>{item.owner.login}</Cell>
+          <Cell>
+            <a href={item.owner.html_url}>{item.owner.login}</a>
+          </Cell>
           <Cell>{item.watchers_count}</Cell>
         </Row>
       ));

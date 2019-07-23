@@ -3,10 +3,11 @@ export interface gitHubRepositoriesState {
   items:
     | {
         id: number;
-        name: string;
-        owner: { login: string };
+        full_name: string;
+        owner: { login: string; html_url: string };
         watchers_count: number;
         language: string;
+        html_url: string;
       }[]
     | undefined;
   total_count: number;
