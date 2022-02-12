@@ -47,7 +47,7 @@
     "@types/redux-logger": "^3.0.7",
     "@types/redux-mock-store": "^1.0.1",
     "@types/semantic-ui": "^2.2.7",
-    "ajv": "^6.10.2",
+    "ajv": "^6.12.3",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "node-sass": "^4.12.0",
